@@ -34,8 +34,7 @@ If you are not familiar with **transfer learning**, there is the papper you [nee
 ## Incremental learning by detecting the conception drift<br>
 As the operating conditions or network topology keeps changing all the time, the data-driven PSSA model needs to be updated according to the given incremental data in offline mode. An incremental learning method is adopted by leveraging [conception drift](http://sweet.ua.pt/gladys/Papers/ADMA_GamaCastillo_06.pdf):<br>
 
-
-![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Scheme%20of%20the%20incremental%20learning..png) 
+<img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Scheme%20of%20the%20incremental%20learning..png" width="350" height="350" alt="图片加载失败时，显示这段字"/>
 
 ## Dataset<br>
 Voltage angle and magnitude of buses are collected as time serirs samples. 10172 samples  are finally obtained as the imbalanced dataset from New England System with historical data of wind and PV generations, wherein the number of stable samples is 9867 and the number of unstable samples is 305. From the imbalanced dataset, 60% is randomly selected as the training samples, and the remaining 40% is used as the testing samples.<br>
@@ -61,7 +60,7 @@ ED, K-LD and PCC are indicators to show the quality of generated samples.
 
 * Curves of various errors and F-measure with our without training strategy. (a) LD, (b) LG, (c) F-measure, (d) training errors of stability classifier:<br>
 
-![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png)
+<img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png" width="350" height="350" alt="图片加载失败时，显示这段字"/>
 
 * Comparison of evaluation indexes of different algorithms:<br>
 
