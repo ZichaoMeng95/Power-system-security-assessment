@@ -42,7 +42,7 @@ Voltage angles of bus 1 under different minimum damping ratio are shown as:<br>
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Voltage%20angle%20of%20bus%201%20under%20different%20damping%20ratio.png) 
 
 ## Simulation results<br>
-* Change of Data Distribution during AC-GAN Training:(a) training 50 epochs, (b) training 100 epochs, (c) training 200 epochs, (d) training 300 epochs<br>
+* Change of Data Distribution during AC-GAN Training. (a) training 50 epochs, (b) training 100 epochs, (c) training 200 epochs, (d) training 300 epochs:<br>
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Distribution%20of%20generated%20data%20during%20AC-GAN%20training%20process.png)
 
 * (a) Distribution of real data (the imbalanced dataset); (b) ED, K-LD and PCC during AC-GAN training process:<br>
@@ -50,11 +50,12 @@ Voltage angles of bus 1 under different minimum damping ratio are shown as:<br>
 
 ED, K-LD and PCC are indicators to show the quality of generated samples.
 
-* visualization of synthesized data distribution with different algorithms: (a) data distribution synthesized by ROS, (b) data distribution synthesized by SMOTE, (c) data distribution synthesized by ADASYN, (d) data distribution synthesized by AC-GAN:<br>
+* visualization of synthesized data distribution with different algorithms. (a) data distribution synthesized by ROS, (b) data distribution synthesized by SMOTE, (c) data distribution synthesized by ADASYN, (d) data distribution synthesized by AC-GAN:<br>
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/visualization%20of%20synthesized%20data%20distribution%20with%20different%20algorithms.png)
 
-* Curves of various errors and F-measure with our without training strategy: (a) LD, (b) LG, (c) F-measure, (d) training errors of stability classifier:<br>
+* Curves of various errors and F-measure with our without training strategy. (a) LD, (b) LG, (c) F-measure, (d) training errors of stability classifier:<br>
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png)
 
 * Comparison of evaluation indexes of different algorithms:<br>
+biaoge
 
