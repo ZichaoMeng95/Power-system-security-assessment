@@ -65,8 +65,13 @@ ED, K-LD and PCC are indicators to show the quality of generated samples.
 
 * Comparison of evaluation indexes of different algorithms:<br>
 
- 表头  | 表头  | 表头
- ---- | ----- | ------  
- 单元格内容  | 单元格内容 | 单元格内容 
- 单元格内容  | 单元格内容 | 单元格内容
+Algorithm  | TPrate/%  | TNrate/% | F-measure/%  | Ac/%
+ ---- | ----- | ------ |  ---- | ----- 
+ Original dataset  | 99.03|	87.50|	92.91|	98.39
+ ROS  | 96.92|	97.99|	97.45|	97.35
+SMOTE  | 98.64|	98.72	|98.68|	98.67 
+ADASYN	|98.01|	**99.81**|	98.91|	98.75
+AC-GAN  | **99.73**|	99.15|	**99.44**|	**99.61**
+
+
 
