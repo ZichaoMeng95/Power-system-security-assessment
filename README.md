@@ -60,7 +60,7 @@ ED, K-LD and PCC are indicators to show the quality of generated samples.
 
 * Curves of various errors and F-measure with our without training strategy. (a) LD, (b) LG, (c) F-measure, (d) training errors of stability classifier:<br>
 
-<img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png" width="350" height="350" alt="图片加载失败时，显示这段字"/>
+<img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png"/>
 
 * Comparison of evaluation indexes of different algorithms:<br>
 
