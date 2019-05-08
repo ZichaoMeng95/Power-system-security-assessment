@@ -64,5 +64,9 @@ ED, K-LD and PCC are indicators to show the quality of generated samples.
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png)
 
 * Comparison of evaluation indexes of different algorithms:<br>
-biaoge
+
+ 表头  | 表头  | 表头
+ ---- | ----- | ------  
+ 单元格内容  | 单元格内容 | 单元格内容 
+ 单元格内容  | 单元格内容 | 单元格内容
 
