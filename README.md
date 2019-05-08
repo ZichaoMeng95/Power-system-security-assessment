@@ -75,7 +75,11 @@ Algorithm  | TPrate/%  | TNrate/% | F-measure/%  | Ac/%
 
 The caculation of each indexes are shown as:<br>
 
-
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 Where TP is the number of samples predicted to be stable and actually stable; FP is the number of samples predicted to be stable but actually unstable; TN is the number of samples predicted to be unstable and actually unstable; FN is the number of samples predicted to be unstable but actually stable.TPrate indicates the proportion of predicted stable samples to all the stable samples. The larger TPrate, the better performance of the algorithm on the samples in the category with lager sample size. TNrate indicates the proportion of predicted unstable samples to all the unstable samples. The larger TNrate, the better performance of the algorithm on the samples in the category with smaller sample size. F-measure indicates the comprehensive index of TPrate and TNrate . The larger the F-measure is, the better the performance of the algorithm on the imbalanced dataset. Ac indicates the overall accuracy.
