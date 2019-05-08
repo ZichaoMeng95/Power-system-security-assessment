@@ -75,9 +75,7 @@ ED, K-LD and PCC are indicators to show the quality of generated samples.
 
 The caculation of each indexes are shown as:<br>
 
-![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/function.png)<br>
-
-<img src="https://github.com/HeTingwei/ReadmeLearn/blob/master/avatar1.jpg" width="150" height="150" alt="图片加载失败时，显示这段字"/>
+<img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/function.png" width="350" height="350" alt="图片加载失败时，显示这段字"/>
 
 Where TP is the number of samples predicted to be stable and actually stable; FP is the number of samples predicted to be stable but actually unstable; TN is the number of samples predicted to be unstable and actually unstable; FN is the number of samples predicted to be unstable but actually stable.
 
