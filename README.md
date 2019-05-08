@@ -1,12 +1,14 @@
 # Power-system-stability-assessment
 
-## Research motivation and solutions<br>
+## Research motivation and contributions<br>
 Data-driven methods are faced with serious data imbalance problem when applied to Power system stability assessment (PSSA). Due to the high reliability of the power system, there are only a few unstable samples in the historical data, so it imposes ***big challenge*** on traditional PSSA classification methods:<br>
 * Traditional PSSA classification methods, such as decision tree, SVM, generally perform poorly on imbalanced datasets, as they are designed to generalize from majority training dataset, which would pay less attention to rare cases. Consequently, test samples belonging to the minority category are misclassified more often than those belonging to the majority category.<br>
 
-In order to realize the accurate fault location in multi-source distribution network by using fault data with small size and low completeness, there are the ***breif solutions*** showing as follows:<br>
-*	**Convolution-transposed convolution network** ([CTN](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8618415)) is adopted to establish the mapping from stable-state data to fault data to realize the estimation of fault conditions not collected in historical dataset. **Auxiliary classifier generative adversarial networks** ([AC-GAN](https://arxiv.org/pdf/1610.09585.pdf)) based on CNN is proposed here which can effectively learn the distribution characteristics of real fault data and generate high quality samples of fault data in line with the actual situation, thus augmenting the dataset. <br>
-*	In view of the extraordinary feature extraction ability of **CNN** on image recognition, time series signals of fault voltage and current acquired by PMU are stored as multi-dimensional arrays which are similar to the form of images and we leverage a CNN classifier to perform automatic feature extraction on them for locating fault. <br>
+Aiming at the problem of data imbalance caused by the scarcity of small signal unstable samples in power system integrated with renewable energy, a novel PSSA approach is presented. The ***main contributions*** can be summarized as follows:<br>
+*	**Auxiliary classifier generative adversarial networks** ([AC-GAN](https://arxiv.org/pdf/1610.09585.pdf)) is proposed here which can effectively learn the distribution characteristics of real data and generate high quality small signal unstable samples in line with the actual situation, thus balancing the dataset. Training strategy including pre-training discriminator, parameter transplantation and batch normalization  is performed to stable and accelerate the training process of PSSA model. <br>
+
+If you are not familiar with **GAN**, there is the papper you [need](https://arxiv.org/pdf/1406.2661.pdf). The structure of GAN is shown as:<br>
+![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/Fault%20location%20model%20in%20distribution%20network.png) 
 
 ## My proposed methodology<br>
 The architecture of fault location framework:<br>
