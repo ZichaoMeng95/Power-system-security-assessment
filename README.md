@@ -7,10 +7,6 @@ Data-driven methods are faced with serious data imbalance problem when applied t
 Aiming at the problem of data imbalance caused by the scarcity of small signal unstable samples in power system integrated with renewable energy, a novel PSSA approach is presented. The ***main contributions*** can be summarized as follow:<br>
 *	**Auxiliary classifier generative adversarial networks** ([AC-GAN](https://arxiv.org/pdf/1610.09585.pdf)) is proposed here which can effectively learn the distribution characteristics of real data and generate high quality small signal unstable samples in line with the actual situation, thus balancing the dataset. Training strategy including pre-training discriminator, parameter transplantation and batch normalization  is performed to stable and accelerate the training process of PSSA model. <br>
 
-If you are not familiar with **GAN**, there is the papper you [need](https://arxiv.org/pdf/1406.2661.pdf). The structure of GAN consists of discriminator (D) and generator (G), which is shown as:<br>
-
-![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/ac-gan%20arcitecture.png) 
-
 ## My proposed methodology<br>
 The architecture of PSSA framework:<br>
 
@@ -22,6 +18,10 @@ The model can be divided in two parts:
 * stability classifier (constructed by CNN)
 
 Firstly, the imbalanced dataset is used as the real data for AC-GAN training. Then, the augmentation dataset is generated accordance with the specified category C using the already trained AC-GAN generator, and the balanced dataset is obtained by combining imbalanced dataset and augmentation dataset. Finally, the balanced dataset is used as training samples to train the stability classifier.<br>
+
+If you are not familiar with **GAN**, there is the papper you [need](https://arxiv.org/pdf/1406.2661.pdf). The structure of GAN consists of discriminator (D) and generator (G), which is shown as:<br>
+
+![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/ac-gan%20arcitecture.png) 
 
 ## Model training strategy with transfer learning<br>
 A parameter fine-tuning method based on steady-state data pre-training is leveraged to solve the over-fitting problem and speed up the training of the overall model. The breif steps are as follows:<br>
