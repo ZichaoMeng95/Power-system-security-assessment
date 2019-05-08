@@ -71,7 +71,15 @@ Algorithm  | TPrate/%  | TNrate/% | F-measure/%  | Ac/%
  ROS  | 96.92 |	97.99 |	97.45 |	97.35
  SMOTE  | 98.64 |	98.72	| 98.68 |	98.67 
  ADASYN	| 98.01 |	**99.81** |	98.91 |	98.75
- AC-GAN  | **99.73** |	99.15 |	**99.44** |	**99.61**
+ AC-GAN  | **99.73** |	99.15 |	**99.44** |	**99.61**<br>
+
+The caculation of each indexes are shown as:<br>
+
+
+
+
+Where TP is the number of samples predicted to be stable and actually stable; FP is the number of samples predicted to be stable but actually unstable; TN is the number of samples predicted to be unstable and actually unstable; FN is the number of samples predicted to be unstable but actually stable.TPrate indicates the proportion of predicted stable samples to all the stable samples. The larger TPrate, the better performance of the algorithm on the samples in the category with lager sample size. TNrate indicates the proportion of predicted unstable samples to all the unstable samples. The larger TNrate, the better performance of the algorithm on the samples in the category with smaller sample size. F-measure indicates the comprehensive index of TPrate and TNrate . The larger the F-measure is, the better the performance of the algorithm on the imbalanced dataset. Ac indicates the overall accuracy.
+ 
 
 
 
