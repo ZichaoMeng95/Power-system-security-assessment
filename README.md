@@ -34,7 +34,7 @@ If you are not familiar with **transfer learning**, there is the papper you [nee
 ## Incremental learning by detecting the conception drift<br>
 As the operating conditions or network topology keeps changing all the time, the data-driven PSSA model needs to be updated according to the given incremental data in offline mode. An incremental learning method is adopted by leveraging [conception drift](http://sweet.ua.pt/gladys/Papers/ADMA_GamaCastillo_06.pdf):<br>
 
-<img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Scheme%20of%20the%20incremental%20learning..png" width="100" height="100" alt="图片加载失败时，显示这段字"/>
+<img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Scheme%20of%20the%20incremental%20learning..png" width="600" height="200" alt="图片加载失败时，显示这段字"/>
 
 ## Dataset<br>
 Voltage angle and magnitude of buses are collected as time serirs samples. 10172 samples  are finally obtained as the imbalanced dataset from New England System with historical data of wind and PV generations, wherein the number of stable samples is 9867 and the number of unstable samples is 305. From the imbalanced dataset, 60% is randomly selected as the training samples, and the remaining 40% is used as the testing samples.<br>
