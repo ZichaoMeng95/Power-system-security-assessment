@@ -76,8 +76,8 @@ ED, K-LD and PCC are indicators to show the quality of generated samples.
 The caculation of each indexes are shown as:<br>
 
 | Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| ------------- |:-------------:| -----:  |
+| col 3 is      | right-aligned | $1600|
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
