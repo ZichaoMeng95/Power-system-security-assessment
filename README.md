@@ -7,7 +7,7 @@ Data-driven methods are faced with serious data imbalance problem when applied t
 Aiming at the problem of data imbalance caused by the scarcity of small signal unstable samples in power system integrated with renewable energy, a novel PSSA approach is presented. The ***main contributions*** can be summarized as follow:<br>
 *	**Auxiliary classifier generative adversarial networks** ([AC-GAN](https://arxiv.org/pdf/1610.09585.pdf)) is proposed here which can effectively learn the distribution characteristics of real data and generate high quality small signal unstable samples in line with the actual situation, thus balancing the dataset. Training strategy including pre-training discriminator, parameter transplantation and batch normalization  is performed to stable and accelerate the training process of PSSA model. <br>
 
-If you are not familiar with **GAN**, there is the papper you [need](https://arxiv.org/pdf/1406.2661.pdf). The structure of GAN is shown as:<br>
+If you are not familiar with **GAN**, there is the papper you [need](https://arxiv.org/pdf/1406.2661.pdf). The structure of GAN consists of discriminator (D) and generator (G), which is shown as:<br>
 
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/ac-gan%20arcitecture.png) 
 
@@ -58,7 +58,7 @@ ED, K-LD and PCC are indicators to show the quality of generated samples.
 
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/visualization%20of%20synthesized%20data%20distribution%20with%20different%20algorithms.png)
 
-* Curves of various errors and F-measure with our without training strategy. (a) LD, (b) LG, (c) F-measure, (d) training errors of stability classifier:<br>
+* Curves of various errors and F-measure with our without training strategy. (a) loss of discriminator LD, (b) loss of generator LG, (c) F-measure, (d) training errors of stability classifier:<br>
 
 <img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png"/>
 
