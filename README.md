@@ -41,21 +41,26 @@ As the operating conditions or network topology keeps changing all the time, the
 Voltage angle and magnitude of buses are collected as time serirs samples. 10172 samples  are finally obtained as the imbalanced dataset from New England System with historical data of wind and PV generations, wherein the number of stable samples is 9867 and the number of unstable samples is 305. From the imbalanced dataset, 60% is randomly selected as the training samples, and the remaining 40% is used as the testing samples.<br>
 
 Voltage angles of bus 1 under different minimum damping ratio are shown as:<br>
+
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Voltage%20angle%20of%20bus%201%20under%20different%20damping%20ratio.png) 
 
 ## Simulation results<br>
 * Change of Data Distribution during AC-GAN Training. (a) training 50 epochs, (b) training 100 epochs, (c) training 200 epochs, (d) training 300 epochs:<br>
+
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Distribution%20of%20generated%20data%20during%20AC-GAN%20training%20process.png)
 
-* (a) Distribution of real data (the imbalanced dataset); (b) ED, K-LD and PCC during AC-GAN training process:<br>
+* Distribution of real data (the imbalanced dataset) is shown in (a); ED, K-LD and PCC during AC-GAN training process are shown in (b):<br>
+
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Distribution%20of%20real%20data%3B%20(b)%20ED%2C%20K-LD%20and%20PCC%20during%20AC-GAN%20training%20process.png)
 
 ED, K-LD and PCC are indicators to show the quality of generated samples.
 
 * visualization of synthesized data distribution with different algorithms. (a) data distribution synthesized by ROS, (b) data distribution synthesized by SMOTE, (c) data distribution synthesized by ADASYN, (d) data distribution synthesized by AC-GAN:<br>
+
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/visualization%20of%20synthesized%20data%20distribution%20with%20different%20algorithms.png)
 
 * Curves of various errors and F-measure with our without training strategy. (a) LD, (b) LG, (c) F-measure, (d) training errors of stability classifier:<br>
+
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png)
 
 * Comparison of evaluation indexes of different algorithms:<br>
