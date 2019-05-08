@@ -30,7 +30,8 @@ A parameter fine-tuning method based on steady-state data pre-training is levera
 
 If you are not familiar with **transfer learning**, there is the papper you [need](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5288526). 
 
-## Incremental learning by detecting the [conception drift](http://sweet.ua.pt/gladys/Papers/ADMA_GamaCastillo_06.pdf)<br>
+## Incremental learning by detecting the conception drift<br>
+As the operating conditions or network topology keeps changing all the time, the data-driven PSSA model needs to be updated according to the given incremental data in offline mode. An incremental learning method is adopted by leveraging [conception drift](http://sweet.ua.pt/gladys/Papers/ADMA_GamaCastillo_06.pdf)<br>:
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Scheme%20of%20the%20incremental%20learning..png) 
 
 ## Dataset<br>
