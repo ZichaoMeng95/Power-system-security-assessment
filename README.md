@@ -30,34 +30,29 @@ A parameter fine-tuning method based on steady-state data pre-training is levera
 
 If you are not familiar with **transfer learning**, there is the papper you [need](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5288526). 
 
-## Incremental learning by detecting the [conception drift](http://sweet.ua.pt/gladys/Papers/ADMA_GamaCastillo_06.pdf):<br>
+## Incremental learning by detecting the [conception drift](http://sweet.ua.pt/gladys/Papers/ADMA_GamaCastillo_06.pdf)<br>
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Scheme%20of%20the%20incremental%20learning..png) 
 
 ## Dataset<br>
-* A standard IEEE 33 bus model is built in PSCAD/EMTDC for data acquisition:<br>
-![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/33-bus%20multi-source%20distribution%20network.png) 
+Voltage angle and magnitude of buses are collected as time serirs samples. 10172 samples  are finally obtained as the imbalanced dataset from New England System with historical data of wind and PV generations, wherein the number of stable samples is 9867 and the number of unstable samples is 305. From the imbalanced dataset, 60% is randomly selected as the training samples, and the remaining 40% is used as the testing samples.<br>
 
-* The second harmonic signals of negative sequence voltage and current measured at bus 22 when two-phase short circuit occurs at bus 6 and transition resistance is 0.01Ohm during simulation time of 0.4s~0.7s:<br>
-![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/Second%20harmonic%20signals%20of%20negative%20sequence%20voltage%20and%20current%20measured%20at%20bus%2022.png) 
-
-In this way, fault data and steady-state data under various operation conditions can be collected, and ensure there is **no intersection** between training samples and testing samples.<br>
+Voltage angles of bus 1 under different minimum damping ratio are shown as:<br>
+![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Voltage%20angle%20of%20bus%201%20under%20different%20damping%20ratio.png) 
 
 ## Simulation results<br>
-* Fault data estimation results:<br>
-![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/Comparison%20of%20%20CTN%20fault%20data%20estimation%20results.png)
+* Change of Data Distribution during AC-GAN Training:(a) training 50 epochs, (b) training 100 epochs, (c) training 200 epochs, (d) training 300 epochs<br>
+![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Distribution%20of%20generated%20data%20during%20AC-GAN%20training%20process.png)
 
-* Fault data augmentation results under different training epochs:<br>
-![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/AC-GAN%20data%20generation%20results%20when%20C%3D1%20during%20training%20process.png)
+* (a) Distribution of real data (the imbalanced dataset); (b) ED, K-LD and PCC during AC-GAN training process:<br>
+![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Distribution%20of%20real%20data%3B%20(b)%20ED%2C%20K-LD%20and%20PCC%20during%20AC-GAN%20training%20process.png)
 
-* Visualization of AC-GAN discriminator output features:<br>
-![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/Visualization%20of%20discriminator%20output%20features%20of%20AC-GAN.png)
+ED, K-LD and PCC are indicators to show the quality of generated samples.
 
-* Curves of various errors and fault location accuracy with our without training strategy:<br>
-![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/training%20strategy.png)
+* visualization of synthesized data distribution with different algorithms: (a) data distribution synthesized by ROS, (b) data distribution synthesized by SMOTE, (c) data distribution synthesized by ADASYN, (d) data distribution synthesized by AC-GAN:<br>
+![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/visualization%20of%20synthesized%20data%20distribution%20with%20different%20algorithms.png)
 
-* The influence of convolution structure change on fault location accuracy:<br>
-![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/structure%20change.png)
+* Curves of various errors and F-measure with our without training strategy: (a) LD, (b) LG, (c) F-measure, (d) training errors of stability classifier:<br>
+![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Curves%20of%20various%20errors%20and%20F-measure%20with%20our%20without%20training%20strategy.png)
 
-* The influence of data normalization on fault location accuracy:<br>
-![](https://github.com/ZichaoMeng95/Fault-location-in-distribution-network/blob/master/images/normalization.png)
+* Comparison of evaluation indexes of different algorithms:<br>
 
