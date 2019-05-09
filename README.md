@@ -1,7 +1,7 @@
 # Power-system-security-assessment
 
 ## Research motivation and contributions<br>
-Data-driven methods are faced with serious data imbalance problem when applied to Power system stability assessment (PSSA). Due to the high reliability of the power system, there are only a few unstable samples in the historical data, so it imposes ***big challenge*** on traditional PSSA classification methods:<br>
+Data-driven methods are faced with serious data imbalance problem when applied to Power system security assessment (PSSA). Due to the high reliability of the power system, there are only a few unstable samples in the historical data, so it imposes ***big challenge*** on traditional PSSA classification methods:<br>
 * Traditional PSSA classification methods, such as decision tree, SVM, generally perform poorly on imbalanced datasets, as they are designed to generalize from majority training dataset, which would pay less attention to rare cases. Consequently, test samples belonging to the minority category are misclassified more often than those belonging to the majority category.<br>
 
 Aiming at the problem of data imbalance caused by the scarcity of small signal unstable samples in power system integrated with renewable energy, a novel PSSA approach is presented. The ***main contributions*** can be summarized as follow:<br>
