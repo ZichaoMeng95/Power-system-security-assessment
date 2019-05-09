@@ -1,4 +1,4 @@
-# Power-system-stability-assessment
+# Power-system-security-assessment
 
 ## Research motivation and contributions<br>
 Data-driven methods are faced with serious data imbalance problem when applied to Power system stability assessment (PSSA). Due to the high reliability of the power system, there are only a few unstable samples in the historical data, so it imposes ***big challenge*** on traditional PSSA classification methods:<br>
