@@ -8,7 +8,7 @@ Aiming at the problem of data imbalance caused by the scarcity of small signal u
 *	**Auxiliary classifier generative adversarial networks** ([AC-GAN](https://arxiv.org/pdf/1610.09585.pdf)) is proposed here which can effectively learn the distribution characteristics of real data and generate high quality small signal unstable samples in line with the actual situation, thus balancing the dataset. Training strategy including pre-training discriminator, parameter transplantation and batch normalization  is performed to stable and accelerate the training process of PSSA model. <br>
 
 ## My proposed methodology<br>
-The architecture of PSSA framework:<br>
+The architecture of PSSA model:<br>
 
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Complete%20model%20for%20stability%20assessment.png) 
 
@@ -39,8 +39,7 @@ As the operating conditions or network topology keeps changing all the time, the
 ## Dataset<br>
 Voltage angle and magnitude of buses are collected as time serirs samples. 10172 samples  are finally obtained as the imbalanced dataset from New England System with historical data of wind and PV generations, wherein the number of stable samples is 9867 and the number of unstable samples is 305. From the imbalanced dataset, 60% is randomly selected as the training samples, and the remaining 40% is used as the testing samples.<br>
 
-Voltage angles of bus 1 under different minimum damping ratio are shown as:<br>
-
+>Voltage angles of bus 1 under different minimum damping ratio are shown as:<br>
 ![](https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/Voltage%20angle%20of%20bus%201%20under%20different%20damping%20ratio.png) 
 
 ## Simulation results<br>
