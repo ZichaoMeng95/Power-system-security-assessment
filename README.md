@@ -68,8 +68,7 @@ Voltage angle and magnitude of buses are collected as time serirs samples. 10172
 >The caculation of each indexes are shown as:<br><img src="https://github.com/ZichaoMeng95/Power-system-stability-assessment/blob/master/image/function.png" width="350" height="350" alt="图片加载失败时，显示这段字"/><br>
 Where TP is the number of samples predicted to be stable and actually stable; FP is the number of samples predicted to be stable but actually unstable; TN is the number of samples predicted to be unstable and actually unstable; FN is the number of samples predicted to be unstable but actually stable.<br>
 TPrate indicates the proportion of predicted stable samples to all the stable samples. The larger TPrate, the better performance of the algorithm on the samples in the category with lager sample size. TNrate indicates the proportion of predicted unstable samples to all the unstable samples. The larger TNrate, the better performance of the algorithm on the samples in the category with smaller sample size. F-measure indicates the comprehensive index of TPrate and TNrate . The larger the F-measure is, the better the performance of the algorithm on the imbalanced dataset. Ac indicates the overall accuracy.<br>
-
-|Algorithm  | TPrate/%  | TNrate/% | F-measure/%  | Ac/%|
+ |Algorithm  | TPrate/%  | TNrate/% | F-measure/%  | Ac/%|
 | :-------------: | :-------------:| :-------------: | :-------------:| :-------------: |
 | Original dataset  | 99.03|	87.50 |	92.91|	98.39|
  |ROS  | 96.92 |	97.99 |	97.45 |	97.35|
